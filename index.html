@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header class="header card">
+                <img class="header-image" src="images/robot.jpg" alt="White robot in a tie">
+                <div class="header-section">
+                    <div class="header-section-media">
+                        <div>
+                            <h1>Mr Robot</h1>
+                            <h4>Full Stack Developer</h4>
+                        </div>
+                        <div> 
+                            <a>mrrobot@gmail.com</a>
+                            <div> 
+                                <a href="https://ca.linkedin.com/" target="_blank">
+                                    <img class="header-media-image" src="images/linkedin-svgrepo-com.svg" alt="LinkedIn logo">
+                                </a>
+                                <a href="https://github.com/" target="_blank">
+                                    <img class="header-media-image" src="images/GitHub-Mark-32px.png" alt="Github logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla dignissim nibh ultrices, sodales metus nec, dapibus eros. 
+                        Aenean at justo augue. Maecenas rhoncus scelerisque pharetra. 
+                        In placerat dolor vel sem vestibulum, ac convallis ex consequat. 
+                        Proin molestie libero eu ligula commodo, ac convallis nulla consectetur. 
+                        Praesent in pellentesque ex. Vivamus non lobortis diam. Morbi maximus, 
+                        nisi ut fermentum viverra, lacus ex convallis purus, vel lacinia ex arcu vel dolor. 
+                        Nulla sed est non neque pellentesque pellentesque.
+                    </div>
+                </div>
+            </header>
+
+            <section class="skills-section card">
+                    <div>
+                        <label for="html">HTML5</label>
+                        <div class="skill-container">
+                            <progress class="skills " id="html" value="90" max="100"> 90% </progress>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="css">CSS3</label>
+                        <div class="skill-container">
+                            <progress class="skills " id="css" value="90" max="100"> 90% </progress>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="js">JavaScript</label>
+                        <div class="skill-container">
+                            <progress class="skills " id="js" value="80" max="100"> 80% </progress>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="react">React</label>
+                        <div class="skill-container">
+                            <progress class="skills " id="react" value="70" max="100"> 70% </progress>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="redux">Redux</label>
+                        <div class="skill-container">
+                            <progress class="skills " id="redux" value="75" max="100"> 75% </progress>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="nodejs">Node.js</label>
+                        <div class="skill-container">
+                            <progress class="skills " id="nodejs" value="75" max="100"> 75% </progress>
+                        </div>
+                    </div>  
+            </section>
+
+            <section class="certificate-section card">
+                <img class="certificate-image" src="images/cert.png" />
+                <div>
+                    <h2 class="certificate-header">Certificate of awesomeness</h2>
+                    <p class="certificate-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla dignissim nibh ultrices, sodales metus nec, dapibus eros.
+                    Aenean at justo augue. Maecenas rhoncus scelerisque pharetra. 
+                    In placerat dolor vel sem vestibulum, ac convallis ex consequat. 
+                    Proin molestie libero eu ligula commodo, ac convallis nulla consectetur.  </p>
+                </div>
+            </section>
+
+            <section class="hobbies-one hobbies-section card">
+                <div>
+                    <img class="hobbie-image" src="images/mountaineer.jpeg" />
+                </div>
+                
+                <div class="hobbie-info">
+                    <h2>I love Mountaineering</h2>
+                    <p class="hobbie-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla dignissim nibh ultrices, sodales metus nec, dapibus eros.</p>
+                </div>
+            </section>
+
+            <section class="hobbies-two hobbies-section card">
+                <div class="image-two">
+                    <img class="hobbie-image image-two" src="images/base-jumping.jpeg" />
+                </div>
+                
+                <div class="hobbie-info">
+                    <h2>I also love Base  Jumping</h2>
+                    <p class="hobbie-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla dignissim nibh ultrices, sodales metus nec, dapibus eros.</p>
+                </div>
+            </section>
+
+            <div class="projects-filter">
+                <a id="prj-allof" onclick="filterAll()" class="filter ligther-bg">All</a>
+                <a id="prj-react" onclick="filterTags(event)" class="filter ligther-bg"> React</a>
+                <a id="prj-nodej" onclick="filterTags(event)" class="filter ligther-bg">Node.js</a>
+                <a id="prj-javas" onclick="filterTags(event)" class="filter ligther-bg">JavaScript</a>
+            </div>
+
+            <section class="projects-section">
+                <div class="prj-react card projects-card">
+                    <img class="projects-card-image" src="images/windbnb.png" alt="upsplash project">
+                    <div class="projects-controls">
+                        <h2 class="projects-header">Windbnb</h2>
+                        <div class="projects-btn-container">
+                            <a class="projects-btn" href="#" target="_blank" rel="noreferrer">DEMO</a>
+                            <a class="projects-btn" href="#" target="_blank" rel="noreferrer">REPO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prj-nodej card projects-card">
+                    <img class="projects-card-image" src="images/upsplash.png" alt="upsplash project">
+                    <div class="projects-controls">
+                        <h2 class="projects-header">Upsplash clone</h2>
+                        <div class="projects-btn-container">
+                            <a class="projects-btn" href="#" target="_blank" rel="noreferrer">DEMO</a>
+                            <a class="projects-btn" href="#" target="_blank" rel="noreferrer">REPO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prj-javas card projects-card">
+                    <img class="projects-card-image" src="images/checkout.png" alt="upsplash project">
+                    <div class="projects-controls">
+                        <h2 class="projects-header">Checkout Page</h2>
+                        <div class="projects-btn-container">
+                            <a class="projects-btn" href="#" target="_blank" rel="noreferrer">DEMO</a>
+                            <a class="projects-btn" href="#" target="_blank" rel="noreferrer">REPO</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- Main -->
+        <footer>
+            <a href="https://github.com/" target="_blank">created by M Webb</a> devChallenges.io
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
