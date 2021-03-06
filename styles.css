@@ -270,7 +270,7 @@ progress[value] {
 
 /* FOOTER */
 
-footer {
+.footer {
 	width: 100%;
 	margin: 3.125em 0 0.625em 0;
 	padding: 0.625em 0;
@@ -282,9 +282,15 @@ footer {
 	font-size: 0.875em;
 }
 
-footer a {
+.footer-link {
 	color: #828282;
 	margin-left: 0.3125em;
+	text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+	color: #D3D3D3;
 }
 
 @media (max-width: 1080px) {
